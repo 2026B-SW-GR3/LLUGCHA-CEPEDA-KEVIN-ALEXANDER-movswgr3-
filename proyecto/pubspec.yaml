@@ -1,0 +1,37 @@
+name: proyecto
+description: "Red y Seguridad - FIS EPN: Conectividad REST y Almacenamiento Seguro en Flutter sobre ciudades del Ecuador."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.13.0-103.1.beta
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+
+  # === MÓDULO 1: Conectividad REST (HTTP) ===
+  http: ^1.2.2
+
+  # === Gestión de Estado y Reactividad (Provider) ===
+  provider: ^6.1.2
+
+  # === MÓDULO 3: Almacenamiento Seguro (3 mecanismos) ===
+  # 1) SharedPreferences -> texto plano (UI/temas)
+  shared_preferences: ^2.3.2
+  # 2) Jetpack DataStore -> reactivo basado en Streams
+  rx_shared_preferences: ^4.0.0
+  # 3) EncryptedSharedPreferences -> AES-256 con Keystore Android
+  flutter_secure_storage: ^9.2.2
+
+  intl: ^0.20.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true

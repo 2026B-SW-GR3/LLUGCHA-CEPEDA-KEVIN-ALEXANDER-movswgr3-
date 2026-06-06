@@ -1,0 +1,35 @@
+name: examen
+description: "CRUD de razas de perros con persistencia híbrida (SQL + NoSQL)."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.13.0-103.1.beta
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+
+  # Persistencia Relacional (SQL)
+  sqflite: ^2.3.3
+  sqflite_common_ffi: ^2.3.3
+  path: ^1.9.0
+  path_provider: ^2.1.4
+
+  # Persistencia No Relacional (NoSQL)
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+
+  # Estrategia de estado (reactividad)
+  provider: ^6.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
